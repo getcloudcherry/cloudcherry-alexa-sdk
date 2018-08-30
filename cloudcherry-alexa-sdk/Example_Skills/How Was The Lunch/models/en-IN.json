@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "cc pantry",
+            "invocationName": "lunch feedback",
             "intents": [
                 {
                     "name": "AMAZON.FallbackIntent",
@@ -20,39 +20,15 @@
                     "samples": []
                 },
                 {
-                    "name": "order",
-                    "slots": [
-                        {
-                            "name": "glass_no",
-                            "type": "AMAZON.NUMBER"
-                        },
-                        {
-                            "name": "item",
-                            "type": "AMAZON.Food"
-                        },
-                        {
-                            "name": "ask",
-                            "type": "ask_phrases"
-                        }
-                    ],
-                    "samples": [
-                        "{ask} {glass_no} cups of {item}",
-                        "{ask} {item}",
-                        "order",
-                        "{ask} {glass_no} {item}",
-                        "i would like to order {item}",
-                        "i would like to have {item}",
-                        "i like to have {item}",
-                        "i want to order {item}",
-                        "i would like to order {glass_no} cups of {item}"
-                    ]
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
                 },
                 {
                     "name": "feedback",
                     "slots": [],
                     "samples": [
+                        "i wish to give feedback",
                         "provide feedback",
-                        "i would like to give feedback",
                         "I want to give feedback",
                         "feedback"
                     ]
@@ -66,57 +42,107 @@
                         },
                         {
                             "name": "digit",
-                            "type": "AMAZON.NUMBER"
+                            "type": "num"
                         }
                     ],
                     "samples": [
-                        "{digit}",
-                        "{text}"
+                        "{text}",
+                        "My name is {text}",
+                        "{digit}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "yeah",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "nope",
+                        "no"
                     ]
                 }
             ],
             "types": [
                 {
-                    "name": "drink",
+                    "name": "yes_no",
                     "values": [
                         {
                             "name": {
-                                "value": "lime juice"
+                                "value": "sure"
                             }
                         },
                         {
                             "name": {
-                                "value": "juice"
+                                "value": "no"
                             }
                         },
                         {
                             "name": {
-                                "value": "coffee"
-                            }
-                        },
-                        {
-                            "name": {
-                                "value": "tea "
+                                "value": "yes"
                             }
                         }
                     ]
                 },
                 {
-                    "name": "ask_phrases",
+                    "name": "num",
                     "values": [
                         {
                             "name": {
-                                "value": "have"
+                                "value": "zero"
                             }
                         },
                         {
                             "name": {
-                                "value": "order"
+                                "value": "ten"
                             }
                         },
                         {
                             "name": {
-                                "value": "bring"
+                                "value": "nine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seven"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "six"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "five"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "four"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one"
                             }
                         }
                     ]
