@@ -1,0 +1,153 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "lunch feedback",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "feedback",
+                    "slots": [],
+                    "samples": [
+                        "i wish to give feedback",
+                        "provide feedback",
+                        "I want to give feedback",
+                        "feedback"
+                    ]
+                },
+                {
+                    "name": "cc_functionalities",
+                    "slots": [
+                        {
+                            "name": "text",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "digit",
+                            "type": "num"
+                        }
+                    ],
+                    "samples": [
+                        "{text}",
+                        "My name is {text}",
+                        "{digit}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "yeah",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "nope",
+                        "no"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "yes_no",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "sure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "num",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "zero"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ten"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seven"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "six"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "five"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "four"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "cc pantry",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "order",
+                    "slots": [
+                        {
+                            "name": "glass_no",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "item",
+                            "type": "AMAZON.Food"
+                        },
+                        {
+                            "name": "ask",
+                            "type": "ask_phrases"
+                        }
+                    ],
+                    "samples": [
+                        "{ask} {glass_no} cups of {item}",
+                        "{ask} {item}",
+                        "order",
+                        "{ask} {glass_no} {item}",
+                        "i would like to order {item}",
+                        "i would like to have {item}",
+                        "i like to have {item}",
+                        "i want to order {item}",
+                        "i would like to order {glass_no} cups of {item}"
+                    ]
+                },
+                {
+                    "name": "feedback",
+                    "slots": [],
+                    "samples": [
+                        "provide feedback",
+                        "i would like to give feedback",
+                        "I want to give feedback",
+                        "feedback"
+                    ]
+                },
+                {
+                    "name": "cc_functionalities",
+                    "slots": [
+                        {
+                            "name": "text",
+                            "type": "AMAZON.FirstName"
+                        },
+                        {
+                            "name": "digit",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{digit}",
+                        "{text}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "drink",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lime juice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "juice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coffee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tea "
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ask_phrases",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "have"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "order"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bring"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
